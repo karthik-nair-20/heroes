@@ -1,0 +1,22 @@
+<h2></h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <button type="button">
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span>{{hero.name}}
+            </a>
+            
+        </button>
+    </li>
+</ul>
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- <div *ngIf="selectedHero">
+<h2>{{selectedHero.name | uppercase}}</h2>
+<div><span>ID:</span>{{selectedHero.id}}</div>
+<div><span>Name:</span>{{hero.name}}</div> -->
+<!-- <div>
+    <label for="name">Hero name:</label>
+    <input type="text" placeholder="name" [(ngModel)] = "selectedHero.name">
+</div>
+</div> -->
+<hero-detail></hero-detail>
